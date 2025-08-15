@@ -1,0 +1,8 @@
+theme = tokyonight
+
+font-family = DepartureMono Nerd Font
+
+maximize
+background-opacity = 0.8
+
+shell-integration = zsh

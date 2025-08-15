@@ -1,0 +1,20 @@
+layout {
+    default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar" {
+              tooltip "F1"
+            }
+        }
+    }
+    tab name="Project" split_direction="horizontal" {
+        pane command="nvim"
+        pane size="20%" command="hugo" {
+            args "server" "-D"
+            start_suspended false
+        }
+    }
+    tab name="Git" {
+        pane command="lazygit"
+    }
+}
