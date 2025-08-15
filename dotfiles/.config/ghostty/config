@@ -1,0 +1,9 @@
+theme = tokyonight
+
+font-family = DepartureMono Nerd Font Mono
+
+fullscreen
+
+shell-integration = zsh
+
+command = /bin/zsh -i -c 'sleep 0.05 && fastfetch; exec zsh'

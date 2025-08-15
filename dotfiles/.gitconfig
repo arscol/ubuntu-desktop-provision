@@ -1,0 +1,5 @@
+[core]
+	editor = nvim
+[user]
+	name = arscol
+	email = im@arscol.dev
