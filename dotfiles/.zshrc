@@ -22,3 +22,7 @@ alias lg='lazygit'
 alias ld='lazydocker'
 alias network='nmtui'
 alias matrix='unimatrix -n -s 96 -l o'
+
+export WAYLAND_DISPLAY=wayland-1
+export XDG_SESSION_TYPE=wayland
+export CLIPBOARD=wl-clipboard

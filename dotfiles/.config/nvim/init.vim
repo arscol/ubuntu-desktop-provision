@@ -65,6 +65,7 @@ nnoremap <silent> <C-Space> <cmd>lua require('telescope.builtin').find_files({
   \ })<CR>
 nnoremap <silent> <C-f> <cmd>Telescope current_buffer_fuzzy_find<CR>
 nnoremap <silent> <C-S-f> <cmd>Telescope live_grep<CR>
+
 nnoremap <silent> <C-e> :lua require("nvim-tree.api").tree.toggle({ focus = false })<CR>
 nnoremap <silent> <C-n> :NvimTreeFindFile<CR>
 
@@ -86,3 +87,18 @@ highlight SignColumn guibg=NONE ctermbg=NONE
 highlight NvimTreeNormal guibg=NONE ctermbg=NONE
 highlight TelescopeNormal guibg=NONE ctermbg=NONE
 highlight BufferLineBackground guibg=NONE ctermbg=NONE
+
+if executable('wl-copy')
+    let g:clipboard = {
+        \   'name': 'wl-clipboard',
+        \   'copy': {
+        \      '+': 'wl-copy --foreground --type text/plain',
+        \      '*': 'wl-copy --foreground --type text/plain --primary',
+        \    },
+        \   'paste': {
+        \      '+': 'wl-paste --no-newline',
+        \      '*': 'wl-paste --no-newline --primary',
+        \   },
+        \   'cache_enabled': 1,
+        \ }
+endif

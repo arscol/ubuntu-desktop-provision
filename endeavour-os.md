@@ -12,7 +12,7 @@ yay -Syu
 ### Install some utilities with pacman
 
 ```
-sudo pacman -S fastfetch ghostty git curl zsh zellij neovim lazygit fd ripgrep npm thefuck hugo transmission-cli mpv docker docker-compose proton-vpn-gtk-app brightnessctl hyprland hyprpaper gcc base-devel make networkmanager
+sudo pacman -S fastfetch ghostty git curl zsh zellij neovim lazygit fd ripgrep npm thefuck hugo transmission-cli mpv docker docker-compose proton-vpn-gtk-app brightnessctl hyprland hyprpaper gcc base-devel make networkmanager wl-clipboard xdg-utils
 ```
 
 ### Install some utilities with yay
