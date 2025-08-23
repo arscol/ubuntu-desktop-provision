@@ -23,6 +23,10 @@ alias ld='lazydocker'
 alias network='nmtui'
 alias matrix='unimatrix -n -s 96 -l o'
 
+alias firefox='firefox &'
+alias steam='steam &'
+alias protonvpn='protonvpn-app &'
+
 export WAYLAND_DISPLAY=wayland-1
 export XDG_SESSION_TYPE=wayland
 export CLIPBOARD=wl-clipboard
