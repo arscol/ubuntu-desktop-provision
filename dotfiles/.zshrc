@@ -21,6 +21,7 @@ alias z='zellij'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias network='nmtui'
+alias bluetooth='bluetoothctl'
 alias matrix='unimatrix -n -s 96 -l o'
 
 alias firefox='firefox &'

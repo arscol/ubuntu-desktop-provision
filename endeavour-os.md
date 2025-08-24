@@ -12,7 +12,7 @@ yay -Syu
 ### Install some utilities with pacman
 
 ```
-sudo pacman -S fastfetch ghostty git curl zsh zellij neovim lazygit fd ripgrep npm thefuck hugo transmission-cli mpv docker docker-compose proton-vpn-gtk-app brightnessctl hyprland hyprpaper gcc base-devel make networkmanager wl-clipboard xdg-utils
+sudo pacman -S fastfetch ghostty git curl zsh zellij neovim lazygit fd ripgrep npm thefuck hugo transmission-cli mpv docker docker-compose proton-vpn-gtk-app brightnessctl hyprland hyprpaper gcc base-devel make networkmanager wl-clipboard xdg-utils bluez bluez-utils
 ```
 
 ### Install some utilities with yay
@@ -63,6 +63,13 @@ sudo systemctl start docker
 sudo systemctl status docker
 sudo usermod -aG docker $USER
 newgrp docker
+```
+
+### Enable Bluetooth
+
+```
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
 ```
 
 ### **If NVIDIA GPU (this step may differ between GPU models)**:
